@@ -1,0 +1,53 @@
+.list {
+    margin: 0;
+    width: 100%;
+    text-wrap: normal;
+    overflow-wrap: normal;
+    word-wrap: break-word;
+    white-space: normal;
+}
+.list p {
+    margin-bottom: 1.5em;
+}
+.list h4 {
+    margin: 0.33em 0 0.1em 0;
+}
+
+.citation,
+.law {
+    display: block;
+    /*position: relative;*/
+    /*display: -webkit-flex; display: flex; display: -webkit-box;*/
+    width: 100%;
+    flex-basis: 50%;
+    margin: 0;
+    padding: 0;
+}
+
+.citation * {}
+.law * {}
+
+.title {
+    font-weight: bold;
+}
+
+.description {}
+
+/**
+ * Citation-only properties
+ */
+.citation {}
+
+/**
+ * Law-only properties
+ */
+.law {}
+
+
+/*!* 567px width or smaller *!*/
+@media all and (max-width: 567px) {
+    .citation,
+    .law {
+        flex-basis: 100%;
+    }
+}

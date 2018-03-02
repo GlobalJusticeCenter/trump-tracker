@@ -1,0 +1,151 @@
+.cardsTable {
+    max-width: 1280px;
+    overflow-y: hidden;
+    display: -webkit-flex; display: flex; display: -webkit-box;
+    flex-direction: column;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    -webkit-align-content: space-around;
+    align-content: space-around;
+    min-width: 360px;
+    -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
+    -moz-align-content: space-around;
+    -ms-align-content: space-around;
+}
+
+/**
+ * Static blue header fixed to top of container
+ */
+.tableHeader {
+    display: -webkit-flex; display: flex; display: -webkit-box;
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    height: auto;
+    text-transform: uppercase;
+    padding: 0.45em 0;
+    margin: 0;
+    font-size: 1.5em;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    -webkit-align-content: space-around;
+    align-content: space-around;
+    -moz-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
+    -moz-align-content: space-around;
+    -ms-align-content: space-around;
+}
+
+.textShadow {
+    text-shadow: 1px 1px 0 #2c2c2c;
+}
+
+/**
+ * Sub-components of tableHeader
+ */
+
+.searchRow,
+.tableTitleRow {
+    display: -webkit-flex; display: flex; display: -webkit-box;
+    -webkit-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    flex-grow: 1;
+}
+
+/**
+ * Search Bar
+ */
+.searchRow {
+    width: 100%;
+    max-width: calc(66% + 2em);
+    margin: 0.45em 0;
+}
+
+.filterInput {
+    margin: 0 1em 1em 1em;
+}
+
+/**
+ * Columns
+ */
+.tableTitleRow {
+    margin: 0.25em;
+    width: 100%;
+    flex-basis: 100%;
+    flex-wrap: nowrap;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    font-size: 0.9em;
+    -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
+}
+
+.leftColumn,
+.rightColumn {
+    width: 50%;
+    text-align: center;
+    flex-basis: 50%;
+    margin: 0;
+}
+
+/**
+ * Left column only
+ */
+.leftColumn {
+    /*border-right: 1px dotted white;*/
+    /*padding-right: 1em;*/
+}
+
+.tableTitleLeft {}
+
+/**
+ * Right column only
+ */
+.rightColumn {}
+
+.tableTitleRight {}
+
+/*
+ * RESPONSIVE BREAKPOINTS
+ *  * iframe collapses at 699px.
+ *    * @700: as-is
+ *    * @699: change!
+ */
+/* 568px width or larger AND 699px or smaller */
+@media all and (min-width: 568px) and (max-width: 699px) {
+    .cardsTable {
+        font-size: 0.85em;
+    }
+    .tableTitleRow {
+        font-size: 0.8em;
+    }
+    .searchRow {
+        margin: 0.45em 0.5em;
+    }
+}
+
+/*!* 567px width or smaller *!*/
+@media all and (max-width: 567px) {
+    .cardsTable {
+        font-size: 0.8em;
+    }
+    .tableTitleRow {
+        font-size: 100%;
+        margin: 0;
+    }
+    .leftColumn {
+        width: 100%;
+    }
+    .searchRow {
+        margin: 0.4em 0;
+    }
+    .rightColumn {
+        display: none;
+    }
+}
