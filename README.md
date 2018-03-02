@@ -1,4 +1,4 @@
-# law-and-trump
+# trump-tracker
 Material Design-themed React app of violations of law by Trump.
 
 Hosted at: http://globaljusticecenter.net/publications/law-and-trump
