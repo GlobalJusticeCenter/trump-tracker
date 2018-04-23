@@ -1,20 +1,19 @@
 {
   "author": "Aaron Melocik, Global Justice Center",
   "description": "Material Design-themed React app of violations of law by Trump.",
-  "homepage": "http://SterlingVix.github.io/law-and-trump",
+  "homepage": "http://GlobalJusticeCenter.github.io/trump-tracker",
   "keywords": [
-    "react",
-    "table",
-    "material design",
+    "global justice center",
     "law",
-    "trump",
-    "global justice center"
+    "material design",
+    "react",
+    "trump"
   ],
-  "license": "TBD",
+  "license": "MIT",
   "main": "src/index.js",
-  "name": "law-and-trump",
+  "name": "trump-tracker",
   "private": false,
-  "repository": "https://github.com/SterlingVix/law-and-trump.git",
+  "repository": "https://github.com/GlobalJusticeCenter/trump-tracker.git",
   "url": "http://globaljusticecenter.net/publications/law-and-trump",
   "version": "1.0.0",
   "dependencies": {
